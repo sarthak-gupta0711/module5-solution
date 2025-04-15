@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="public">
+<head>
+  <meta charset="UTF-8">
+  <base href="./">
+  <title>Restaurant Newsletter</title>
+
+  <!-- AngularJS CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+  <!-- Your scripts -->
+  <script src="public.module.js"></script>
+  <script src="routes.js"></script>
+  <script src="user.service.js"></script>
+  <script src="sign-up.controller.js"></script>
+  <script src="my-info.controller.js"></script>
+</head>
+<body>
+
+  <nav>
+    <a href="#!/my-info">My Info</a> |
+    <a href="#!/sign-up">Sign Up</a>
+  </nav>
+
+  <div ng-view></div>
+
+</body>
+</html>

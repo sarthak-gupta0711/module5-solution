@@ -1,0 +1,17 @@
+<div ng-if="!myInfoCtrl.user">
+    Not Signed Up Yet. <a href="#!/sign-up">Sign up Now!</a>
+  </div>
+  
+  <div ng-if="myInfoCtrl.user">
+    <p>Name: {{myInfoCtrl.user.firstName}} {{myInfoCtrl.user.lastName}}</p>
+    <p>Email: {{myInfoCtrl.user.email}}</p>
+    <p>Phone: {{myInfoCtrl.user.phone}}</p>
+  
+    <div>
+      <h4>Favorite Item:</h4>
+      <p>{{myInfoCtrl.user.menuItem.name}}</p>
+      <p>{{myInfoCtrl.user.menuItem.description}}</p>
+      <img ng-src="{{myInfoCtrl.user.menuItem.image}}" width="150" />
+    </div>
+  </div>
+  
